@@ -1,0 +1,1634 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skinome × Holland — Marknadsstrategi 2025–2026</title>
+  <style>
+    :root {
+      --cream: #faf8f5;
+      --sand: #f0ebe2;
+      --clay: #d4c4b0;
+      --bark: #8b6e52;
+      --ink: #1c1c1e;
+      --muted: #6b6b6b;
+      --accent: #4a7c6f;
+      --accent-light: #e8f0ee;
+      --danger: #c0392b;
+      --warn: #e67e22;
+      --success: #27ae60;
+      --border: #e0d9d0;
+      --white: #ffffff;
+      --shadow: 0 2px 12px rgba(0,0,0,0.07);
+      --radius: 10px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      background: var(--cream);
+      color: var(--ink);
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      gap: 0;
+      height: 56px;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+    .nav-brand {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--bark);
+      margin-right: 2rem;
+      flex-shrink: 0;
+    }
+    nav a {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-decoration: none;
+      padding: 0 0.9rem;
+      height: 56px;
+      display: inline-flex;
+      align-items: center;
+      border-bottom: 2px solid transparent;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    nav a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, #2d4a42 0%, #1c3530 60%, #0f2420 100%);
+      color: var(--white);
+      padding: 5rem 2rem 4rem;
+      text-align: center;
+    }
+    .hero-label {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 1.2rem;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 400;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    .hero h1 span { color: #a8c5be; }
+    .hero-sub {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 15px;
+      color: rgba(255,255,255,0.65);
+      max-width: 600px;
+      margin: 0 auto 2rem;
+    }
+    .hero-meta {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.35);
+    }
+
+    /* ── CONTAINER ── */
+    .container { max-width: 960px; margin: 0 auto; padding: 0 1.5rem; }
+    .section { padding: 4rem 0; border-bottom: 1px solid var(--border); }
+    .section:last-of-type { border-bottom: none; }
+
+    /* ── SECTION HEADER ── */
+    .section-num {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+    .section h2 {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin-bottom: 0.5rem;
+    }
+    .section-intro {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 15px;
+      color: var(--muted);
+      max-width: 680px;
+      margin-bottom: 2.5rem;
+      line-height: 1.6;
+    }
+    h3 {
+      font-size: 1.15rem;
+      font-weight: 400;
+      margin: 2rem 0 0.75rem;
+      color: var(--ink);
+    }
+    h4 {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bark);
+      margin: 1.5rem 0 0.5rem;
+    }
+    p { margin-bottom: 1rem; color: var(--ink); }
+
+    /* ── ALERT BOXES ── */
+    .alert {
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .alert-title {
+      font-weight: 700;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+    }
+    .alert-red    { background: #fdf2f0; border-left: 3px solid var(--danger); }
+    .alert-red .alert-title { color: var(--danger); }
+    .alert-green  { background: #eef7f1; border-left: 3px solid var(--success); }
+    .alert-green .alert-title { color: var(--success); }
+    .alert-amber  { background: #fef9ee; border-left: 3px solid var(--warn); }
+    .alert-amber .alert-title { color: var(--warn); }
+    .alert-teal   { background: var(--accent-light); border-left: 3px solid var(--accent); }
+    .alert-teal .alert-title { color: var(--accent); }
+
+    /* ── CARDS GRID ── */
+    .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 1.25rem; margin: 1.5rem 0; }
+    .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      box-shadow: var(--shadow);
+    }
+    .card-icon { font-size: 1.5rem; margin-bottom: 0.75rem; }
+    .card h5 {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--bark);
+      margin-bottom: 0.5rem;
+    }
+    .card p { font-size: 14px; color: var(--muted); margin: 0; }
+
+    /* ── STAT TILES ── */
+    .stats { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+    .stat {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem 1rem;
+      text-align: center;
+    }
+    .stat-num {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+      margin-bottom: 0.3rem;
+    }
+    .stat-label {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* ── TABLE ── */
+    .tbl-wrap { overflow-x: auto; margin: 1.5rem 0; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 14px;
+    }
+    thead tr { background: var(--ink); color: var(--white); }
+    thead th {
+      padding: 0.75rem 1rem;
+      text-align: left;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    tbody tr { border-bottom: 1px solid var(--border); }
+    tbody tr:nth-child(even) { background: var(--sand); }
+    tbody td { padding: 0.75rem 1rem; color: var(--ink); vertical-align: top; }
+    .tag {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 600;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+    .tag-green { background: #eef7f1; color: var(--success); }
+    .tag-red   { background: #fdf2f0; color: var(--danger); }
+    .tag-amber { background: #fef9ee; color: var(--warn); }
+    .tag-teal  { background: var(--accent-light); color: var(--accent); }
+    .tag-gray  { background: #f0f0f0; color: #666; }
+
+    /* ── FUNNEL ── */
+    .funnel { margin: 2rem 0; }
+    .funnel-step {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.5rem;
+      margin-bottom: 1rem;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      box-shadow: var(--shadow);
+    }
+    .funnel-num {
+      flex-shrink: 0;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .funnel-content h5 {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 0.25rem;
+    }
+    .funnel-content p { font-size: 13px; color: var(--muted); margin: 0; }
+
+    /* ── PRIORITY LIST ── */
+    .priority-list { list-style: none; margin: 1.5rem 0; }
+    .priority-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1rem 1.25rem;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      margin-bottom: 0.75rem;
+      box-shadow: var(--shadow);
+    }
+    .priority-badge {
+      flex-shrink: 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-top: 2px;
+    }
+    .priority-1 { background: #fdf2f0; color: var(--danger); }
+    .priority-2 { background: #fef9ee; color: var(--warn); }
+    .priority-3 { background: var(--accent-light); color: var(--accent); }
+    .priority-list li div h5 {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 0.2rem;
+    }
+    .priority-list li div p { font-size: 13px; color: var(--muted); margin: 0; }
+
+    /* ── TIMELINE ── */
+    .timeline { position: relative; padding-left: 2rem; margin: 2rem 0; }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 7px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: var(--clay);
+    }
+    .tl-item { position: relative; margin-bottom: 2rem; }
+    .tl-dot {
+      position: absolute;
+      left: -1.75rem;
+      top: 4px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--accent);
+      border: 2px solid var(--white);
+      box-shadow: 0 0 0 2px var(--accent);
+    }
+    .tl-phase {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--bark);
+      margin-bottom: 0.25rem;
+    }
+    .tl-item h5 {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .tl-item ul { padding-left: 1.25rem; }
+    .tl-item ul li { font-size: 14px; color: var(--muted); margin-bottom: 0.3rem; }
+
+    /* ── CREATIVE CARDS ── */
+    .creative-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.25rem; margin: 1.5rem 0; }
+    .creative-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .creative-header {
+      background: var(--ink);
+      color: var(--white);
+      padding: 0.75rem 1.25rem;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .creative-body { padding: 1.25rem; }
+    .creative-body p { font-size: 13px; color: var(--muted); margin-bottom: 0.5rem; }
+    .creative-body strong { color: var(--ink); }
+
+    /* ── QUOTE ── */
+    blockquote {
+      border-left: 3px solid var(--accent);
+      padding: 1rem 1.5rem;
+      margin: 1.5rem 0;
+      background: var(--accent-light);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      font-style: italic;
+      font-size: 15px;
+      color: var(--ink);
+    }
+    blockquote cite {
+      display: block;
+      margin-top: 0.5rem;
+      font-style: normal;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    /* ── INFLUENCER TABLE ── */
+    .influencer-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      margin-bottom: 0.75rem;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 1rem;
+      box-shadow: var(--shadow);
+    }
+    .inf-rank {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--clay);
+      min-width: 2rem;
+      text-align: center;
+    }
+    .inf-info h5 {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 0.2rem;
+    }
+    .inf-info p { font-size: 13px; color: var(--muted); margin: 0; }
+    .inf-stats { text-align: right; }
+    .inf-stats span {
+      display: block;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .inf-stats strong { font-size: 14px; color: var(--accent); }
+
+    /* ── BUDGET BAR ── */
+    .budget-bar { margin: 1.5rem 0; }
+    .budget-row { margin-bottom: 0.75rem; }
+    .budget-label {
+      display: flex;
+      justify-content: space-between;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 13px;
+      margin-bottom: 0.3rem;
+    }
+    .budget-track {
+      background: var(--sand);
+      border-radius: 4px;
+      height: 8px;
+      overflow: hidden;
+    }
+    .budget-fill { height: 100%; border-radius: 4px; transition: width 0.3s; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--ink);
+      color: rgba(255,255,255,0.4);
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+    }
+    footer strong { color: rgba(255,255,255,0.7); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .hero { padding: 3rem 1.25rem 2.5rem; }
+      .section { padding: 2.5rem 0; }
+      .influencer-card { grid-template-columns: 1fr; }
+      .inf-stats { text-align: left; }
+    }
+
+    /* ── PRINT ── */
+    @media print {
+      nav { display: none; }
+      .section { page-break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── NAV ────────────────────────────────── -->
+<nav>
+  <span class="nav-brand">Skinome × NL</span>
+  <a href="#brand">Varumärke</a>
+  <a href="#marknad">Marknaden</a>
+  <a href="#konkurrenter">Konkurrenter</a>
+  <a href="#kanaler">Kanaler</a>
+  <a href="#plan">Go-to-Market</a>
+  <a href="#meta">Meta-kampanj</a>
+  <a href="#atgarder">Åtgärder</a>
+</nav>
+
+<!-- ── HERO ────────────────────────────────── -->
+<header class="hero">
+  <p class="hero-label">Country Manager Rapport · Holland</p>
+  <h1>Skinome <span>×</span> Nederland<br>Marknadsstrategi 2025–2026</h1>
+  <p class="hero-sub">En komplett marknadsanalys och go-to-market-plan för att etablera Skinome som ledande premium clean beauty-märke i Holland.</p>
+  <p class="hero-meta">Sammanställd mars 2026 &nbsp;·&nbsp; Konfidentiell &nbsp;·&nbsp; Internt bruk</p>
+</header>
+
+<!-- ── EXECUTIVE SUMMARY ────────────────────── -->
+<div class="container">
+  <section class="section" id="exec">
+    <p class="section-num">Sammanfattning</p>
+    <h2>Läget just nu — och vart vi ska</h2>
+    <p class="section-intro">Skinome har ett genuint världsklassigt produkterbjudande. Problemet i Holland är inte produkten — det är okändheten, ett för tidigt konverteringsfokus och avsaknad av holländsk lokal närvaro.</p>
+
+    <div class="alert alert-red">
+      <div class="alert-title">Kritiskt problem</div>
+      Nuvarande ROAS på 0,3 innebär att vi förlorar pengar aktivt för varje euro vi annonserar. Grundorsakerna är: engelskspråkig sajt och annonser, ingen holländsk social proof, och försök att konvertera en publik som aldrig hört talas om oss. Detta måste åtgärdas omedelbart — innan budgeten ökas.
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <div class="card-icon">🧬</div>
+        <h5>Produktövertaget är verkligt</h5>
+        <p>Forskning med Linköpings Universitet bevisar att konserveringsfria produkter ökar mikrobiomsdiversiteten. Retinal är 10x effektivare än retinol. Detta är inte marknadsföring — det är vetenskap.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🇳🇱</div>
+        <h5>Rätt marknad, fel tajming</h5>
+        <p>Holland är €854M-marknaden med stark tillväxt inom clean beauty och science-backed skincare. Men vi försöker sälja utan att ha byggt förtroende. Holländare är pragmatiker — de vill förstå varför, inte bara vad.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔑</div>
+        <h5>Tre nycklar till framgång</h5>
+        <p>1. Holländsk sajt och annonser. 2. Bygg förtroende via micro-influencers och press innan konverteringskampanjer. 3. Johanna Gillbro som trovärdig röst — vetenskapens ansikte utåt.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SEKTION 1: VARUMÄRKE ────────────────── -->
+  <section class="section" id="brand">
+    <p class="section-num">Del 1</p>
+    <h2>Skinomes varumärke och produkterbjudande</h2>
+    <p class="section-intro">Vad gör oss genuint unika — och varför räcker det inte att bara ha bra produkter.</p>
+
+    <h3>Grundaren och trovärdigheten</h3>
+    <p>Skinome grundades av <strong>Dr. Johanna Gillbro</strong>, PhD i hudpigmentering med 20 år av dermatologisk forskning, tidigare chef för innovation i hudvårdsindustrin. Hon identifierade ett fundamentalt problem: aktiva ingredienser bryts ned under traditionell hudvårds 3-åriga hållbarhetstid — och konserveringsmedlen som gör det möjligt skadar hudens mikrobiom.</p>
+
+    <blockquote>
+      "Many active ingredients get destroyed during the shelf-life period in traditional skincare."
+      <cite>— Dr. Johanna Gillbro, grundare Skinome</cite>
+    </blockquote>
+
+    <p>Forskning utförd med <strong>Linköpings Universitet och Gut Feeling Labs</strong> visar att konserveringsfria formuleringar ökar hudens mikrobiomsdiversitet — vilket korrelerar med minskad irritation och förbättrad textur. Det är ett akademiskt fundament som de flesta konkurrenter saknar helt.</p>
+
+    <h3>USP-hierarki — vad som faktiskt skiljer oss</h3>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>USP-lager</th>
+            <th>Budskap</th>
+            <th>Unikhetsgrad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Färsk hudvård</strong></td>
+            <td>Tillverkad i liten volym, kort hållbarhetstid, ingen nedbrytning av aktiva</td>
+            <td><span class="tag tag-green">Unik på marknaden</span></td>
+          </tr>
+          <tr>
+            <td><strong>Inga konserveringsmedel</strong></td>
+            <td>Inget som stör mikrobiom, inga hormonstörande ämnen</td>
+            <td><span class="tag tag-teal">Sällsynt i premiumsegmentet</span></td>
+          </tr>
+          <tr>
+            <td><strong>Kylförvaring</strong></td>
+            <td>Aktiva ingredienser bevarar full potens hela hållbarhetstiden</td>
+            <td><span class="tag tag-green">Unik på marknaden</span></td>
+          </tr>
+          <tr>
+            <td><strong>Mikrobiom-forskning</strong></td>
+            <td>Kliniska studier med university-partners, mätbara resultat</td>
+            <td><span class="tag tag-teal">Sällsynt i clean beauty</span></td>
+          </tr>
+          <tr>
+            <td><strong>Retinal (ej retinol)</strong></td>
+            <td>10x mer effektivt, bättre penetration, mindre irritation</td>
+            <td><span class="tag tag-amber">Växande kategori</span></td>
+          </tr>
+          <tr>
+            <td><strong>Levande probiotika</strong></td>
+            <td>Miljarder Lactobacillus Reuteri — aktiveras vid användning</td>
+            <td><span class="tag tag-green">Unik på marknaden</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Produktportfölj och prissättning</h3>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Produkt</th>
+            <th>Pris SEK</th>
+            <th>Pris EUR (ca)</th>
+            <th>Primär nytta</th>
+            <th>Holland-potential</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Retinal Concentrate</strong></td>
+            <td>899 kr</td>
+            <td>~€76</td>
+            <td>Anti-aging, rynkor, pigment, elasticitet. Retinal 0,06% + prebiotika + zinkaskorbat</td>
+            <td><span class="tag tag-green">Primär hero-produkt</span></td>
+          </tr>
+          <tr>
+            <td><strong>Probiotic Concentrate</strong></td>
+            <td>799 kr</td>
+            <td>~€68</td>
+            <td>Mikrobiom-balans, jämnare hy, mindre känslighet. Miljarder Lactobacillus Reuteri</td>
+            <td><span class="tag tag-green">Primär hero-produkt</span></td>
+          </tr>
+          <tr>
+            <td><strong>Rich Emulsion</strong></td>
+            <td>599 kr</td>
+            <td>~€51</td>
+            <td>Djup fuktgivning, hudbarriär. Niacinamid, zink, ectoin, postbiotisk fermentering</td>
+            <td><span class="tag tag-teal">Upsell / startkit</span></td>
+          </tr>
+          <tr>
+            <td><strong>Sun Emulsion SPF 50+</strong></td>
+            <td>798 kr</td>
+            <td>~€68</td>
+            <td>Ansikts- och kroppsskydd utan onödiga tillsatser</td>
+            <td><span class="tag tag-amber">Säsongssatsning</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="alert alert-teal">
+      <div class="alert-title">Prissättningsanalys</div>
+      Med Retinal Concentrate på ~€76 och Probiotic Concentrate på ~€68 positionerar vi oss i premiumsegmentet — över CeraVe (€17–23) och La Roche-Posay Retinol B3 (€55), men i paritet med Paula's Choice (€71) och Tromborg (~€90–120). Det är rätt position för science-backed clean beauty, men kräver att vi levererar tydlig värdekommunikation.
+    </div>
+
+    <h3>Kommunikationsutmaningen med kyld hudvård</h3>
+    <p>Kylförvaring är vår starkaste USP — men också den största köptröskel online. En kund som aldrig hört om konceptet ställer sig frågor: <em>Varför måste jag kyla det? Vad händer om leveransen tar lång tid? Är det krångligt?</em></p>
+    <p>Dessa frågor måste besvaras <strong>innan</strong> kassasteg, inte efter. En tydlig "Varför kyld?"-sektion på produktsidan är inte optional — det är en konverteringsfaktor.</p>
+  </section>
+
+  <!-- ── SEKTION 2: MARKNADEN ──────────────────── -->
+  <section class="section" id="marknad">
+    <p class="section-num">Del 2</p>
+    <h2>Den holländska marknaden</h2>
+    <p class="section-intro">Holland är en mogen, skeptisk och ingrediensmedveten marknad. Det tar längre tid att vinna — men när man vunnit förtroendet är det hållbart.</p>
+
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-num">€854M</div>
+        <div class="stat-label">Hudvårdsmarknad 2024</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">51,6%</div>
+        <div class="stat-label">E-handel av total försäljning 2025</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">6,6%</div>
+        <div class="stat-label">CAGR K-beauty i NL → 2032</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">4,2%</div>
+        <div class="stat-label">CAGR premium segment 2025–30</div>
+      </div>
+    </div>
+
+    <h3>Vad holländska konsumenter faktiskt värdesätter</h3>
+
+    <div class="cards">
+      <div class="card">
+        <div class="card-icon">🔬</div>
+        <h5>Transparens och vetenskap</h5>
+        <p>Holländare vill förstå <em>varför</em> en ingrediens fungerar. Kliniska data och forskarreferenser konverterar bättre än löften och estetik.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🌿</div>
+        <h5>Clean label med bevis</h5>
+        <p>Starkt intresse för naturliga och hållbara produkter — men de är skeptiska mot greenwashing. Inga tomma påståenden. Bevisa det.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">✂️</div>
+        <h5>Skinimalism</h5>
+        <p>"Färre produkter, fler effekter" är den dominerande trenden. Passar våra koncentrat perfekt — mer aktiva ämnen, utan onödigt.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">⏳</div>
+        <h5>Lång beslutsperiod</h5>
+        <p>Premium hudvård (€40–100+) utlöser 3–6 månaders research och övervägande. Holländare köper inte impulsivt från okända märken.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📱</div>
+        <h5>Skeptiska mot sociala annonser</h5>
+        <p>Nästan 2 av 3 holländare ignorerar kommersiella budskap på Facebook och köper inte direkt från annonser. Varumärkesbygge via content och ambassadörer är mer effektivt.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">💰</div>
+        <h5>Premiumisering pågår</h5>
+        <p>Mellansegmentet tappar. Konsumenter väljer antingen premiumprodukter med tydligt mervärde — eller lågpris. Vi är i rätt position om vi kan motivera priset.</p>
+      </div>
+    </div>
+
+    <h3>Hur framgångsrika varumärken etablerat sig i Holland</h3>
+    <p>Studerar vi lokala framgångshistorier ser vi ett tydligt mönster: alla byggde förtroende <em>innan</em> de skalade betald annonsering.</p>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Varumärke</th>
+            <th>Strategi</th>
+            <th>Lärdom för Skinome</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Naïf</strong> 🇳🇱</td>
+            <td>Stark grundarhistoria (föräldrar), B-Corp, ambassadörsnätverk, reste €23M. Startade i babyvård, expanderade.</td>
+            <td>Johanna Gillbros berättelse är lika stark. Äkthet och forskaridentitet är guld.</td>
+          </tr>
+          <tr>
+            <td><strong>Food for Skin</strong> 🇳🇱</td>
+            <td>Ren ingredienslista, community-first, ambassadörer före annonser. Återbrukade ingredienser från livsmedelsindustrin.</td>
+            <td>Vår "inga onödiga tillsatser"-vinkel resonerar med deras publik.</td>
+          </tr>
+          <tr>
+            <td><strong>La Roche-Posay</strong> 🇫🇷</td>
+            <td>Dermatologrekommendationer som kärna, TikTok-utbildning med hög engagemangsgrad (>15%). Vetenskap som storytelling.</td>
+            <td>Vi har starkare vetenskap. Johanna på TikTok kan ta samma position — men med mer autentisk grundarröst.</td>
+          </tr>
+          <tr>
+            <td><strong>Tromborg</strong> 🇩🇰</td>
+            <td>Skandinaviskt premium, kallpressat, produktion i Danmark. Kommunicerar kyla och naturlighet som luxus.</td>
+            <td>Kylförvaring kan kommuniceras som premium-signal, inte logistikproblem.</td>
+          </tr>
+          <tr>
+            <td><strong>Rituals</strong> 🇳🇱</td>
+            <td>Premium experience, stark retail-expansion, konsekvent estetik. Lokal favorit som gick global.</td>
+            <td>Retail-potential på sikt (Douglas, Ici Paris XL) — men kräver lösad kylkedja.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ── SEKTION 3: KONKURRENTER ─────────────── -->
+  <section class="section" id="konkurrenter">
+    <p class="section-num">Del 3</p>
+    <h2>Konkurrensbild i Holland</h2>
+    <p class="section-intro">Vi konkurrerar i ett segment utan en tydlig ägare. Det är en möjlighet — men kräver att vi väljer position aktivt.</p>
+
+    <h3>Retinol/Retinal-kategorin i NL</h3>
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Varumärke</th>
+            <th>Produkt</th>
+            <th>Pris</th>
+            <th>Position</th>
+            <th>Skinomes fördel</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>CeraVe</strong></td>
+            <td>Resurfacing Retinol Serum 30ml</td>
+            <td>€17–23</td>
+            <td>Massmarknad, apotekmärke</td>
+            <td>Innehåller konserveringsmedel. Retinol (sämre). Inga levande aktiva.</td>
+          </tr>
+          <tr>
+            <td><strong>La Roche-Posay</strong></td>
+            <td>Retinol B3 Serum 30ml</td>
+            <td>€41–55</td>
+            <td>Dermokosmetika, apotekspremium</td>
+            <td>Retinol (ej retinal). Konserveringsmedel. Inget mikrobiom-fokus.</td>
+          </tr>
+          <tr>
+            <td><strong>Paula's Choice</strong></td>
+            <td>1% Retinol Treatment 30ml</td>
+            <td>€60–71</td>
+            <td>Science-backed premium DTC</td>
+            <td>Närmaste konkurrent positionsmässigt. Vi har kylförvaring + probiotika + grundarvetenskap.</td>
+          </tr>
+          <tr>
+            <td><strong>Medik8</strong></td>
+            <td>Crystal Retinal serien</td>
+            <td>€50–90</td>
+            <td>Klinikmärke, retinal-specialist</td>
+            <td>Också retinal — men saknar mikrobiomfokus, kylförvaring och färsk-konceptet.</td>
+          </tr>
+          <tr>
+            <td><strong>Skinome</strong></td>
+            <td>Retinal Concentrate</td>
+            <td>~€76</td>
+            <td><span class="tag tag-green">Science + clean + fresh + micro</span></td>
+            <td>Retinal + probiotika + ingen konservering + klinisk forskning. Kombinationen är unik.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Clean Beauty-segmentet i NL</h3>
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Varumärke</th>
+            <th>Origin</th>
+            <th>Prisklass</th>
+            <th>Styrkor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Naïf</strong></td>
+            <td>🇳🇱 Lokal</td>
+            <td>€15–50</td>
+            <td>B-Corp, stor lokal tillit, 10+ länder</td>
+          </tr>
+          <tr>
+            <td><strong>Food for Skin</strong></td>
+            <td>🇳🇱 Lokal</td>
+            <td>€10–100</td>
+            <td>Upcycled ingredienser, stark community</td>
+          </tr>
+          <tr>
+            <td><strong>Tromborg</strong></td>
+            <td>🇩🇰 Skandinavisk</td>
+            <td>€25–120</td>
+            <td>Organisk, kallpressad, dansk premium</td>
+          </tr>
+          <tr>
+            <td><strong>Pai Skincare</strong></td>
+            <td>🇬🇧 Brittisk</td>
+            <td>€30–80</td>
+            <td>Sensitiv hud-specialist, organisk certifierad</td>
+          </tr>
+          <tr>
+            <td><strong>Esse Skincare</strong></td>
+            <td>🌍 Internationell</td>
+            <td>€50–120</td>
+            <td>Levande probiotika, mikrobiom, 42 länder</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="alert alert-green">
+      <div class="alert-title">Marknadsposition — vår lucka</div>
+      <strong>Kombinations-USP som ingen äger:</strong> Skinome är det enda märket som kombinerar (1) retinal med klinisk forskning, (2) levande probiotika, (3) konserveringsfria färska formuleringar, och (4) kylförvaring som kvalitetslöfte. Esse Skincare har probiotika men inga retinalider. Medik8 har retinal men inget mikrobiomfokus. Paula's Choice är science-backed men konventionell. Vi kan äga korsningen av vetenskap + clean + resultat.
+    </div>
+  </section>
+
+  <!-- ── SEKTION 4: KANALER ──────────────────── -->
+  <section class="section" id="kanaler">
+    <p class="section-num">Del 4</p>
+    <h2>Kanalstrategi för Holland</h2>
+    <p class="section-intro">Med begränsad budget (~€8 500/mån) kan vi inte vara överallt. Prioriteringen baseras på kostnadseffektivitet, trovärdighetsbygge och snabbhet till konvertering.</p>
+
+    <h3>Kanalmatris</h3>
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Kanal</th>
+            <th>Primärt syfte</th>
+            <th>Kostnad</th>
+            <th>Tidshorizont</th>
+            <th>Prioritet</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Holländsk sajt + copy</strong></td>
+            <td>Konvertering, trovärdighet</td>
+            <td>Engångskostnad</td>
+            <td>Omedelbart</td>
+            <td><span class="tag tag-red">Kritisk P1</span></td>
+          </tr>
+          <tr>
+            <td><strong>Meta (FB/IG) — strukturerat</strong></td>
+            <td>Awareness + konvertering</td>
+            <td>Löpande budget</td>
+            <td>Omedelbart, optimera löpande</td>
+            <td><span class="tag tag-red">Kritisk P1</span></td>
+          </tr>
+          <tr>
+            <td><strong>Micro-influencers NL</strong></td>
+            <td>Trovärdighet, social proof</td>
+            <td>Låg (produkter + litet arvode)</td>
+            <td>1–4 veckor</td>
+            <td><span class="tag tag-red">Kritisk P1</span></td>
+          </tr>
+          <tr>
+            <td><strong>PR / editorial press</strong></td>
+            <td>Varumärkeskännedom, auktoritet</td>
+            <td>Tid (via PR-byrå)</td>
+            <td>4–12 veckor</td>
+            <td><span class="tag tag-amber">Hög P2</span></td>
+          </tr>
+          <tr>
+            <td><strong>TikTok (organisk + betald)</strong></td>
+            <td>Awareness, utbildning, ny publik</td>
+            <td>Låg start</td>
+            <td>3–6 månader</td>
+            <td><span class="tag tag-amber">Hög P2</span></td>
+          </tr>
+          <tr>
+            <td><strong>Google Ads (sökning)</strong></td>
+            <td>Fånga intent (retinal, probiotika)</td>
+            <td>Medel</td>
+            <td>Löpande</td>
+            <td><span class="tag tag-amber">Hög P2</span></td>
+          </tr>
+          <tr>
+            <td><strong>Bol.com</strong></td>
+            <td>Discovery, synlighet, volym</td>
+            <td>5–17% provision</td>
+            <td>2–4 månader att sätta upp</td>
+            <td><span class="tag tag-teal">Medel P3</span></td>
+          </tr>
+          <tr>
+            <td><strong>E-post / CRM</strong></td>
+            <td>Retention, LTV, återköp</td>
+            <td>Låg löpande</td>
+            <td>Börja nu</td>
+            <td><span class="tag tag-teal">Medel P3</span></td>
+          </tr>
+          <tr>
+            <td><strong>Retail (Douglas / Ici Paris XL)</strong></td>
+            <td>Varumärkeskännedom, volym</td>
+            <td>Hög (kylkedja krävs)</td>
+            <td>12–18 månader</td>
+            <td><span class="tag tag-gray">Lång sikt P4</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Holländsk influencer-strategi</h3>
+    <p>Micro-influencers (10K–200K följare) är vår kostnadseffektivaste kanal för att bygga trovärdighet snabbt. Dutch micro-influencers har genomsnittlig engagemangsgrad på 3,5% — markant högre än makro. Autenticitet värderas högt.</p>
+
+    <div class="influencer-card">
+      <div class="inf-rank">1</div>
+      <div class="inf-info">
+        <h5>Anne · @deskincarejunkie (Instagram)</h5>
+        <p>Amsterdam. Skincare-tutorials, ingredient education, science-backed reviews. Starka kopplingar till vår målgrupp.</p>
+      </div>
+      <div class="inf-stats">
+        <span>Följare</span>
+        <strong>25 000</strong>
+        <span>Engagemang</span>
+        <strong>14,08%</strong>
+      </div>
+    </div>
+
+    <div class="influencer-card">
+      <div class="inf-rank">2</div>
+      <div class="inf-info">
+        <h5>@laurenloois (TikTok + Instagram)</h5>
+        <p>Skincare education, holländska följare, konsekvent content. Potential för retinal/probiotika-samarbete.</p>
+      </div>
+      <div class="inf-stats">
+        <span>Följare</span>
+        <strong>399 000</strong>
+        <span>Engagemang</span>
+        <strong>1,6%</strong>
+      </div>
+    </div>
+
+    <div class="influencer-card">
+      <div class="inf-rank">3</div>
+      <div class="inf-info">
+        <h5>Guusje van Geel · @guusje (Instagram)</h5>
+        <p>Fitness, wellness, hälsolivsstil. Gymshark-ambassador. Når exakt vår primära målgrupp (tränar, yoga, kostmedvetna).</p>
+      </div>
+      <div class="inf-stats">
+        <span>Följare</span>
+        <strong>678 000</strong>
+        <span>Engagemang</span>
+        <strong>2,6%</strong>
+      </div>
+    </div>
+
+    <div class="influencer-card">
+      <div class="inf-rank">4</div>
+      <div class="inf-info">
+        <h5>@shrads (TikTok)</h5>
+        <p>Nummer ett på skincare-TikTok i NL. Bred räckvidd, bra för awareness-kampanjer med educationalvinkeln.</p>
+      </div>
+      <div class="inf-stats">
+        <span>Följare</span>
+        <strong>709 000</strong>
+        <span>Engagemang</span>
+        <strong>1,51%</strong>
+      </div>
+    </div>
+
+    <div class="alert alert-teal">
+      <div class="alert-title">TikTok-möjligheten ingen tagit</div>
+      Analyserat holländsk TikTok: det saknas nästan helt vetenskapligt grundat hudvårdsinnehåll på holländska. La Roche-Posay och CeraVe dominerar "dermokosmetika"-kategorin — men med generiska claims. En serie korta, välgjorda videos med Johanna Gillbro (eller NL-influencer som presenterar Skinomes vetenskap) kan ta ett helt oägt territorium.
+    </div>
+
+    <h3>PR — holländsk mediebild</h3>
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Publikation</th>
+            <th>Räckvidd</th>
+            <th>Vinkel för Skinome</th>
+            <th>Prioritet</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Libelle</strong></td>
+            <td>1M+ läsare/vecka</td>
+            <td>"Svensk forskning revolutionerar hudvården — utan konserveringsmedel"</td>
+            <td><span class="tag tag-red">Tier 1</span></td>
+          </tr>
+          <tr>
+            <td><strong>Mirror Mirror Magazine</strong></td>
+            <td>Beaty-specialist</td>
+            <td>Ingrediensdjupdyk, retinal vs retinol, mikrobiomforskning</td>
+            <td><span class="tag tag-red">Tier 1</span></td>
+          </tr>
+          <tr>
+            <td><strong>Vogue Nederland</strong></td>
+            <td>Premium mode/skönhet</td>
+            <td>Skandinavisk lyx, johanna gillbro-profil, "the science of freshness"</td>
+            <td><span class="tag tag-red">Tier 1</span></td>
+          </tr>
+          <tr>
+            <td><strong>Beau Monde</strong></td>
+            <td>Glamour, kv. 21–45</td>
+            <td>Premium cleanbeauty, varför kylskåp är framtidens hudvård</td>
+            <td><span class="tag tag-amber">Tier 2</span></td>
+          </tr>
+          <tr>
+            <td><strong>Flair</strong></td>
+            <td>7M sidvisningar</td>
+            <td>Lifestylevinkel, rutiner, ingredient education</td>
+            <td><span class="tag tag-amber">Tier 2</span></td>
+          </tr>
+          <tr>
+            <td><strong>Margriet</strong></td>
+            <td>Stor Tier-1</td>
+            <td>Maartje van Engelen (beauty journalist) — skicka pressampling</td>
+            <td><span class="tag tag-amber">Tier 2</span></td>
+          </tr>
+          <tr>
+            <td><strong>Dutch Health Store</strong></td>
+            <td>Science-backed content hub</td>
+            <td>Redan positionerade som "science + nature" — perfekt match</td>
+            <td><span class="tag tag-amber">Tier 2</span></td>
+          </tr>
+          <tr>
+            <td><strong>Kek Mama</strong></td>
+            <td>Mammor, hälsomedvetna</td>
+            <td>Produkter för sensitiv hud, utan hormonstörande ämnen</td>
+            <td><span class="tag tag-teal">Tier 3</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ── SEKTION 5: GO-TO-MARKET PLAN ───────── -->
+  <section class="section" id="plan">
+    <p class="section-num">Del 5</p>
+    <h2>Go-to-Market Plan — Rangordnad</h2>
+    <p class="section-intro">Konkreta åtgärder rangordnade efter förväntad effekt. Fas 1 måste genomföras innan ytterligare budget investeras i annonser.</p>
+
+    <div class="timeline">
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-phase">Fas 1 · Månad 1–2 · Omedelbar prioritet</div>
+        <h5>Lägg grunden — stoppa blödningen</h5>
+        <ul>
+          <li><strong>Holländsk sajt och produkttexter</strong> — översätt till holländska. Specifikt: produktsidor, förklaring av kylförvaring (FAQ-sektion), varumärkeshistoria med Johannas bakgrund, kundrecensioner på NL. Utan detta är all annonsspend suboptimal.</li>
+          <li><strong>Holländska annonstexter på Meta</strong> — sluta köra engelska annonser. Holländare konverterar markant bättre på modersmål i premium-köp.</li>
+          <li><strong>Implementera full-funnel Meta-struktur</strong> — se detaljplan i Del 6.</li>
+          <li><strong>Skicka produkter till 10–15 micro-influencers i NL</strong> — välj profiler inom skincare, wellness och lifestyle. Inga krav på specifikt budskap, bara autentisk återkoppling.</li>
+          <li><strong>Samla holländska recensioner aktivt</strong> — kontakta befintliga NL-kunder, erbjud incitament för att lämna recension på hemsidan.</li>
+        </ul>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-phase">Fas 2 · Månad 2–4 · Varumärkesbygge</div>
+        <h5>Bygg förtroende och räckvidd</h5>
+        <ul>
+          <li><strong>PR-offensiv med vetenskaplig vinkel</strong> — pressampling till Libelle, Mirror Mirror, Vogue NL. Pressmeddelande: "Svensk forskning visar att konserveringsmedel stör hudens mikrobiom." Johanna Gillbro som expert-källa.</li>
+          <li><strong>TikTok-konto och første contentstrategi</strong> — starta med 2 videos/vecka. Format: ingredient-education (retinal vs retinol), "vad gör konserveringsmedel med din hud?", "varför ska hudvård ligga i kylen?" Subtextad holländska.</li>
+          <li><strong>Influencer-partnerskap djupare</strong> — välj 2–3 profiler för betalt samarbete. Anne @deskincarejunkie för trovärdighet + Guusje van Geel för wellness-räckvidd.</li>
+          <li><strong>Google Ads sökning</strong> — fånga hög-intent sökningar: "retinal huidverzorging", "probiotische skincare Nederland", "huidverzorging zonder conserveringsmiddelen".</li>
+          <li><strong>E-post flows</strong> — välkomstflöde som utbildar om färsk hudvård och svarar på kylförvaring-frågor. Retention är billigare än förvärv.</li>
+        </ul>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-phase">Fas 3 · Månad 4–8 · Skalning</div>
+        <h5>Skala det som bevisligen fungerar</h5>
+        <ul>
+          <li><strong>Bol.com listing</strong> — registrera som partner (kräver KvK-nummer för NL/BE), optimera produktfeed med holländska titlar och beskrivningar, sätt upp Bol Retail Media för sponsored products. Fokus initialt på synlighet och att samla reviews (Bestseller Badge kräver 4+ stjärnor).</li>
+          <li><strong>Öka Meta-budget till Advantage+ Shopping Campaigns</strong> — när pixeln har 50+ konverteringar/vecka, kör ASC parallellt med manuella kampanjer. ASC genererar 22% högre ROAS än traditionell targeting.</li>
+          <li><strong>Utöka TikTok till betald</strong> — boosta toppresterande organiska videos. Samarbeta med @shrads eller @laurenloois för sponsored-content.</li>
+          <li><strong>Startkit och bundles</strong> — skapa ett "Intro to Fresh Skincare"-kit (Probiotic + Rich Emulsion) till en inträdesvänlig prisnivå. Sänker tröskeln för ny kund.</li>
+        </ul>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-phase">Fas 4 · Månad 8–18 · Marknadsposition</div>
+        <h5>Äg ett segment, expandera distribution</h5>
+        <ul>
+          <li><strong>Retail-dialoger</strong> — inled konversationer med Douglas NL och Ici Paris XL. Förutsätter löst kylkedja i butik (kräver kylmonter eller ambient-lösning).</li>
+          <li><strong>Belgien som nästa marknad</strong> — Holland och Belgien (Flandern) delar språk och konsumentbeteende. Kosta marginellt att utöka till grannmarknaden.</li>
+          <li><strong>Programmatisk display och YouTube</strong> — brand awareness vid scale, utbildningsvideos som pre-roll.</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <h3>Rekommenderad budgetfördelning — nuläge</h3>
+    <p>Totalt ~100 000 SEK/mån (~€8 500). Förslag på omfördelning:</p>
+
+    <div class="budget-bar">
+      <div class="budget-row">
+        <div class="budget-label"><span>Meta (omstrukturerat, holländska annonser)</span><span>40%  · ~€3 400</span></div>
+        <div class="budget-track"><div class="budget-fill" style="width:40%;background:var(--accent)"></div></div>
+      </div>
+      <div class="budget-row">
+        <div class="budget-label"><span>Influencer-partnerskap (produkter + arvoden)</span><span>25%  · ~€2 100</span></div>
+        <div class="budget-track"><div class="budget-fill" style="width:25%;background:var(--bark)"></div></div>
+      </div>
+      <div class="budget-row">
+        <div class="budget-label"><span>PR-byrå (press, editorial)</span><span>20%  · ~€1 700</span></div>
+        <div class="budget-track"><div class="budget-fill" style="width:20%;background:var(--clay)"></div></div>
+      </div>
+      <div class="budget-row">
+        <div class="budget-label"><span>Google Ads (sökning)</span><span>10%  · ~€850</span></div>
+        <div class="budget-track"><div class="budget-fill" style="width:10%;background:#a8c5be)"></div></div>
+      </div>
+      <div class="budget-row">
+        <div class="budget-label"><span>TikTok / content produktion</span><span>5%  · ~€425</span></div>
+        <div class="budget-track"><div class="budget-fill" style="width:5%;background:#ccc"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SEKTION 6: META KAMPANJ ─────────────── -->
+  <section class="section" id="meta">
+    <p class="section-num">Del 6</p>
+    <h2>Meta-kampanjstrategi — Best-in-Class</h2>
+    <p class="section-intro">Hur de bästa märkena i världen bygger Meta-kampanjer — och hur Skinome ska göra det bättre.</p>
+
+    <div class="alert alert-amber">
+      <div class="alert-title">Kärnfrågan: Varumärke eller produkt?</div>
+      <strong>Varken eller — båda, men med separata kampanjer och klara roller.</strong> Vi är för okända för ren brand awareness (för dyrt, för långsamt med €8 500/mån). Vi är för okända för ren konvertering (ingen köper från ett okänt märke). Lösningen är <em>edutainment-konvertering</em>: varje annons lär ut något om vår filosofi och pekar naturligt mot en produkt — utan att kännas som reklam.
+    </div>
+
+    <h3>Vad analysen av 300 toppbeauty-annonser visar</h3>
+    <p>Dessa mönster är inte åsikter — de är data från analys av de mest framgångsrika beauty-kampanjerna på Meta:</p>
+
+    <div class="stats">
+      <div class="stat"><div class="stat-num">33,7%</div><div class="stat-label">av toppannonser är UGC-format</div></div>
+      <div class="stat"><div class="stat-num">212 dagar</div><div class="stat-label">snittlivslängd toppannons</div></div>
+      <div class="stat"><div class="stat-num">1 558 dagar</div><div class="stat-label">längsta beauty-annons (before/after)</div></div>
+      <div class="stat"><div class="stat-num">4–6 ord</div><div class="stat-label">optimal headline-längd</div></div>
+      <div class="stat"><div class="stat-num">€42 vs €71</div><div class="stat-label">grundarvideo vs generisk UGC i CPA</div></div>
+      <div class="stat"><div class="stat-num">2,3x</div><div class="stat-label">högre engagemang, grundare vs creator</div></div>
+    </div>
+
+    <h3>Best-in-class: Tre märken — tre lärdomar</h3>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Märke</th>
+            <th>Vad de gör på Meta</th>
+            <th>Resultat</th>
+            <th>Lärdomen för Skinome</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Paula's Choice</strong></td>
+            <td>"Meta Moment Maker" — 3-dagars intensiv burst-kampanj kombinerat med löpande Advantage+ Shopping. Mobil-first video på Feed, Stories, Reels och in-stream simultant. Skapar "audience saturation."</td>
+            <td>+27 pt ad recall · +7,1 pt awareness · +8,3 pt köpavsikt · 27M nådda · <strong>58% av köpen från helt nya kunder</strong></td>
+            <td>Burst + löpande ASC är formeln för att väcka en ny marknad. Saturation-tänket fungerar även med begränsad budget om man kör koncentrerat.</td>
+          </tr>
+          <tr>
+            <td><strong>The Ordinary</strong></td>
+            <td>Radikal ingredienstransparens. Text-tunga format, raka ingrediensnamn. Inga modeller — bara produktnamn och innehåll. Skin quizzes för personalisering.</td>
+            <td>Byggde kategoriledande position i science-backed skincare globalt via transparens som differentiering.</td>
+            <td>Vi har starkare vetenskap än The Ordinary. Ta deras transparensprincip och gå ett steg längre: förklara inte bara VAD som finns i produkten — utan VARFÖR den är annorlunda tillverkad.</td>
+          </tr>
+          <tr>
+            <td><strong>CeraVe</strong></td>
+            <td>Kombinerar (1) riktig klinisk trovärdighet via dermatologer med (2) humor och kulturell relevans. Seedad UGC som kändes organisk. Michael Cera-kampanjen: seedad viral story → Super Bowl-reveal med dermatologer.</td>
+            <td>+15% engagemangsgrad på TikTok. Överlägsen kategoriposition trots massmarknadspris.</td>
+            <td>Dermatologkredibilitet + äkta mänsklig röst = vinnande. Johanna Gillbro <em>är</em> vår dermatolog. Det är starkare än att låna någon annans auktoritet.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="alert alert-green">
+      <div class="alert-title">Skinomes konkurrensfördel som ingen av dessa tre har</div>
+      Paula's Choice saknar en grundare med Johannas vetenskapliga profil. CeraVe är ett apotekmärke utan äkta grundarröst. The Ordinary har ingen personlighet. <strong>Skinome kan äga kombinationen ingen annan har: PhD-forskarens auktoritet + grundarens autenticitet + kontroversiell sanning om en hel bransch.</strong> Det är exakt vad Meta-algoritmen belönar med lång watch time, kommentarer och delningar.
+    </div>
+
+    <h3>Johanna Gillbro — er starkaste tillgång på Meta</h3>
+    <p>McKinsey Beauty 2025: <strong>73% av hudvårdskonsumenter är skeptiska mot varumärkespåståenden</strong>. Av dessa säger 68% att de litar mer på grundarförklaringar än på influencer-endorsements. Grundarvideon är er billigaste och mest effektiva investering.</p>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr><th>Creative-typ</th><th>CPA</th><th>Watch time</th><th>Engagemang</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Grundarvideo (Johanna)</strong></td><td><strong>€42</strong></td><td><strong>2,8x längre</strong></td><td><strong>2,3x högre</strong></td></tr>
+          <tr><td>Generisk creator/influencer UGC</td><td>€71</td><td>Baseline</td><td>Baseline</td></tr>
+          <tr><td>Traditionell brand video</td><td>€85–110</td><td>Lägst</td><td>Lägst</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>De första 3 sekunderna — hooken som avgör allt</h3>
+    <p>Meta-algoritmen mäter 2- och 3-sekunders retention. En annons som tappar tittaren på sekund 4 kostar lika mycket som en annons de såg i 30 sekunder — men levererar noll värde. <strong>Hooken är inte en detalj. Det är kampanjen.</strong> Hooks tappar ~37% av sin effekt efter 7 dagar och måste bytas systematiskt.</p>
+
+    <h4>Hook-typ 1 — Misstaget de inte visste att de begick</h4>
+    <div class="cards">
+      <div class="card">
+        <div class="card-icon">💡</div>
+        <h5>Psykologi</h5>
+        <p>Skapar omedelbar self-doubt. "Gör <em>jag</em> det fel?" Tvingar fram fortsatt tittande.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🎬</div>
+        <h5>Exempel — holländska</h5>
+        <p><em>"Als jouw huidverzorging niet in de koelkast hoeft, lees dan dit."</em><br><em>"Dit is waarom dure serums na 6 maanden stoppen met werken."</em><br><em>"Het ingrediënt dat jouw gezichtscrème 3 jaar houdt, schaadt ook je huid."</em></p>
+      </div>
+    </div>
+
+    <h4>Hook-typ 2 — Det kontraintuitiva påståendet</h4>
+    <div class="cards">
+      <div class="card">
+        <div class="card-icon">💡</div>
+        <h5>Psykologi</h5>
+        <p>Information som utmanar vad folk tror sig veta skapar nyfikenhet. Hjärnan vill lösa kognitiv dissonans.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🎬</div>
+        <h5>Exempel — Johanna till kameran</h5>
+        <p><em>"Ik heb 20 jaar huidonderzoek gedaan. Het duurde 15 jaar voor ik besefte dat ik met de verkeerde formule werkte."</em><br><em>"De enige reden dat huidverzorging 3 jaar houdbaar is, is omdat het stoffen bevat die je huid beschadigen."</em></p>
+      </div>
+    </div>
+
+    <h4>Hook-typ 3 — Siffran som stoppar scrollet</h4>
+    <div class="cards">
+      <div class="card">
+        <div class="card-icon">💡</div>
+        <h5>Psykologi</h5>
+        <p>Specifika siffror ger omedelbar trovärdighet. Hjärnan registrerar "10x" snabbare än "mer effektiv".</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🎬</div>
+        <h5>Exempel</h5>
+        <p><em>"Retinal is 10x sterker dan retinol — maar 9 van de 10 producten bevatten nog steeds retinol."</em><br><em>"Traditionele huidverzorging: 3 jaar houdbaar. De onze: 6 maanden. Dat is geen fout — dat is het punt."</em></p>
+      </div>
+    </div>
+
+    <h4>Hook-typ 4 — Konversationen (person-till-person)</h4>
+    <div class="cards">
+      <div class="card">
+        <div class="card-icon">💡</div>
+        <h5>Psykologi</h5>
+        <p>Imiterar organisk konversation. Känns inte som reklam. Algoritmen belönar detta med lägre CPM.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🎬</div>
+        <h5>Exempel — holländsk kund</h5>
+        <p><em>"Iedereen vraagt me wat ik doe met mijn huid. Het antwoord is altijd hetzelfde."</em><br><em>"Mijn huid is nog nooit zo goed geweest — en het enige wat ik heb veranderd is dit."</em></p>
+      </div>
+    </div>
+
+    <h3>Kommunikationshierarki — Education-to-Conviction</h3>
+    <p>Det som fungerar bäst för ett okänt premium-märke med ett komplext koncept är en sekventiell modell. Varje steg kan vara en separat annons — eller komprimeras i en 30-sekunders video:</p>
+
+    <div class="funnel">
+      <div class="funnel-step">
+        <div class="funnel-num">1</div>
+        <div class="funnel-content">
+          <h5>AVSLÖJA — ett problem de inte visste att de hade</h5>
+          <p>Konserveringsmedel i hudvård stör hudens mikrobiom. Inget varumärke, inga produkter ännu. Bara en sanning som utmanar.</p>
+        </div>
+      </div>
+      <div class="funnel-step">
+        <div class="funnel-num">2</div>
+        <div class="funnel-content">
+          <h5>FÖRKLARA — varför det händer (med vetenskap)</h5>
+          <p>Johanna: "Traditionell hudvård behöver konserveringsmedel för att hålla 3 år. Men de aktiva ingredienserna bryts ändå ned — och konserveringsmedlen skadar mikrobiomets mångfald." Linköpings Universitet, kliniska data.</p>
+        </div>
+      </div>
+      <div class="funnel-step">
+        <div class="funnel-num">3</div>
+        <div class="funnel-content">
+          <h5>DEMONSTRERA — lösningen konkret</h5>
+          <p>Produkten i kylskåpet. Textur. Applicering. Korta hållbarhetstider som kvalitetslöfte. "Freshly made" visualiserat.</p>
+        </div>
+      </div>
+      <div class="funnel-step">
+        <div class="funnel-num">4</div>
+        <div class="funnel-content">
+          <h5>BEVISA — med resultat</h5>
+          <p>Holländska kunders before/after. Dag 30, dag 60, dag 90. Identisk belysning, neutral bakgrund, inga filter. Specifika hudproblem namngivna.</p>
+        </div>
+      </div>
+      <div class="funnel-step">
+        <div class="funnel-num">5</div>
+        <div class="funnel-content">
+          <h5>AVLÄGSNA — sista tveksamheten</h5>
+          <p>"Är kylförvaring krångligt?" "Vad händer om paketet är varmt vid leverans?" "Varför kostar det mer?" Adressera objectionerna direkt — det bygger förtroende snabbare än claims.</p>
+        </div>
+      </div>
+    </div>
+
+    <h3>De fyra creative-formaten Skinome ska bygga</h3>
+
+    <div class="creative-grid">
+      <div class="creative-card">
+        <div class="creative-header">Format 1 · Grundarvideon — Prioritet 1</div>
+        <div class="creative-body">
+          <p><strong>Vad:</strong> Johanna Gillbro, direkt till kameran. 20–30 sek. Ingen studio. Mobilkamera räcker — autenticitet &gt; produktion.</p>
+          <p><strong>Struktur:</strong><br>
+          [0–3 sek] Hook: <em>"Alles wat ik 15 jaar deed klopte niet."</em><br>
+          [3–10 sek] Problemet: konserveringsmedel + nedbrytning av aktiva<br>
+          [10–20 sek] Lösningen: färsk hudvård, varför kylförvaring<br>
+          [20–28 sek] Bevis: Linköping, kliniska resultat<br>
+          [28–30 sek] CTA: <em>"Probeer wat écht werkt."</em></p>
+          <p><strong>Data:</strong> CPA €42 vs €71 generisk UGC. 2,3x engagemang. 2,8x längre watch time.</p>
+        </div>
+      </div>
+      <div class="creative-card">
+        <div class="creative-header">Format 2 · Misstaget — Problemmedveten publik</div>
+        <div class="creative-body">
+          <p><strong>Vad:</strong> UGC-stil, holländsk kvinna 30–45 år. Håller upp sin vanliga hudvård, pekar på konserveringslistan.</p>
+          <p><strong>Struktur:</strong><br>
+          [0–3 sek] <em>"Ik ben gestopt met dit nadat ik begreep wat het met mijn huid doet."</em><br>
+          [3–12 sek] Visar konserveringsmedel på vanlig produkt. Fakta, inga påhopp.<br>
+          [12–22 sek] Demonstrerar Skinome — textur, kylskåpet, applicering.<br>
+          [22–30 sek] Before/after eller dag-30-resultat.</p>
+          <p><strong>Data:</strong> UGC + visuellt bevis = 62% av vinnande annonser. Before/after-format: 1 558 dagars livslängd.</p>
+        </div>
+      </div>
+      <div class="creative-card">
+        <div class="creative-header">Format 3 · Ingredient Education — Lösningsmedveten publik</div>
+        <div class="creative-body">
+          <p><strong>Vad:</strong> Text-overlay + produktnärbild. 15 sek. Voiceover eller text-only. Riktat mot de som redan vet om retinol/probiotika.</p>
+          <p><strong>Struktur:</strong><br>
+          <em>"Retinol vs Retinal — wat is het verschil?"</em><br>
+          Retinol → Retinal → Retinoic Acid (actieve vorm)<br>
+          <em>"Retinal slaat een stap over. 10x sterkere penetratie."</em><br>
+          <em>"Zonder conserveringsmiddelen die het effect tegengaan."</em><br>
+          CTA: Skinome Retinal Concentrate →</p>
+          <p><strong>Data:</strong> Social media retinol-content DISCERN score 2,1/5. Fyll detta gap och äg territoriet.</p>
+        </div>
+      </div>
+      <div class="creative-card">
+        <div class="creative-header">Format 4 · Objection Remover — Konversionsfas</div>
+        <div class="creative-body">
+          <p><strong>Vad:</strong> Adresserar de tre vanligaste köptrösklarna direkt. Kör som retargeting mot besökt sajt men ej köpt.</p>
+          <p><strong>Tre objections:</strong><br>
+          1. <em>"Is koeling niet onpraktisch?"</em> → Past in elke koelkast. 6 maanden houdbaar.<br>
+          2. <em>"Waarom is het duurder?"</em> → Minder ingrediënten, meer actieve werking.<br>
+          3. <em>"Wat als het pakket warm aankomt?"</em> → Direct koelen = volledig effectief.</p>
+          <p><strong>Data:</strong> UGC + benefit-text overlay = 38% högre ROAS. "Try It" som CTA &gt; "Buy Now" för premium.</p>
+        </div>
+      </div>
+    </div>
+
+    <h3>Två målgrupper — två kommunikationsvägar</h3>
+
+    <div class="alert alert-teal">
+      <div class="alert-title">Problemmedveten vs. Lösningsmedveten publik</div>
+      <strong>Problemmedveten</strong> (vet att huden mår dåligt, vet inte varför): Börja med Format 1 eller 2 — avslöja att det kan vara deras hudvård som är problemet.<br><br>
+      <strong>Lösningsmedveten</strong> (vet om retinol/probiotika, kanske testat andra märken): Börja med Format 3 — gå direkt på varför vår retinal eller våra probiotika är tekniskt överlägsna. Skippa introduktionen — de behöver inte den.
+    </div>
+
+    <div class="funnel">
+      <div class="funnel-step">
+        <div class="funnel-num">→</div>
+        <div class="funnel-content">
+          <h5>Cold audience — Awareness, 40% av budget</h5>
+          <p>Format 1 + Format 2. Mål: Videovisningar, Reach. Bred målgrupp: NL-kvinnor 28–55, intressen wellness, clean beauty, yoga, organic food.</p>
+        </div>
+      </div>
+      <div class="funnel-step">
+        <div class="funnel-num">→</div>
+        <div class="funnel-content">
+          <h5>Sett &gt;50% av video — Consideration, 30% av budget</h5>
+          <p>Format 3. Mål: Trafik till produktsida, Add to Cart. Retarget alla som sett awareness-annonser + lookalike av befintliga kunder.</p>
+        </div>
+      </div>
+      <div class="funnel-step">
+        <div class="funnel-num">→</div>
+        <div class="funnel-content">
+          <h5>Besökt sajt / lagt i korg — Conversion, 30% av budget</h5>
+          <p>Format 4 + Advantage+ Shopping Campaign (ASC). Mål: Köp. Skicka till holländsk produktsida med kylförvaringsförklaring synlig.</p>
+        </div>
+      </div>
+    </div>
+
+    <h3>Advantage+ Shopping (ASC) — när och hur</h3>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr><th>Fas</th><th>Kampanjtyp</th><th>Förväntad ROAS</th><th>Vad som händer</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Månad 1–3</strong></td>
+            <td>Manuell (fröa pixeln)</td>
+            <td>1,5–2,0x</td>
+            <td>Bygg konverteringsdata. Testa alla 4 creative-format. Identifiera vinnare.</td>
+          </tr>
+          <tr>
+            <td><strong>Månad 3–6</strong></td>
+            <td>50% ASC + 50% manuell</td>
+            <td>2,0–3,0x</td>
+            <td>ASC aktiveras när pixeln har 50+ konv/vecka. +22% ROAS vs traditionell targeting.</td>
+          </tr>
+          <tr>
+            <td><strong>Månad 6–12</strong></td>
+            <td>70% ASC + 30% manuell retargeting</td>
+            <td>3,0–4,5x</td>
+            <td>ASC sköter skalning. Manuell bevarar precision på retargeting och nischpublik.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="alert alert-red">
+      <div class="alert-title">Kritiskt: Creative refresh är inte valfritt</div>
+      Hooks tappar ~37% av sin effekt efter 7 dagar. Varumärken som uppdaterar creatives <strong>varje vecka</strong> håller ROAS 3–5x. Varumärken som uppdaterar månadsvis faller till break-even inom 90 dagar. Planera för minst 2–3 nya varianter per månad — testade mot varandra med CBO.
+    </div>
+
+    <h3>ROAS-mål och marginalanalys</h3>
+
+    <div class="stats">
+      <div class="stat"><div class="stat-num">0,3x</div><div class="stat-label">Nuläge — strukturproblem</div></div>
+      <div class="stat"><div class="stat-num">1,7x</div><div class="stat-label">Break-even (~60% bruttomarginal)</div></div>
+      <div class="stat"><div class="stat-num">1,5–2,0x</div><div class="stat-label">Månad 1–3 (efter lokalisering)</div></div>
+      <div class="stat"><div class="stat-num">2,0–3,0x</div><div class="stat-label">Månad 3–6 (social proof etablerat)</div></div>
+      <div class="stat"><div class="stat-num">3,0–4,5x</div><div class="stat-label">Månad 6–12 (ASC + varumärke)</div></div>
+    </div>
+
+    <div class="alert alert-green">
+      <div class="alert-title">Varför ROAS 0,3 inte är ett produktproblem</div>
+      Med ~60% bruttomarginal är break-even ROAS ca 1,7x. Nuvarande 0,3x beror på: (1) engelska annonser mot holländsk publik, (2) kall publik utan varumärkeskännedom, (3) kylförvaring oförklarat på landningssidan, (4) ingen holländsk social proof. Dessa är strukturproblem med kända lösningar — inte ett signal om att produkten inte säljer.
+    </div>
+
+    <h3>Tre saker att göra imorgon</h3>
+    <ul class="priority-list">
+      <li>
+        <span class="priority-badge priority-1">Nu</span>
+        <div>
+          <h5>Boka inspelning med Johanna — 45 minuter, 3 videos</h5>
+          <p>Inget manus. Samtalsstruktur från Format 1 ovan. Mobilkamera räcker. Subtexta till holländska. Det är er mest kostnadseffektiva investering i Meta-performance.</p>
+        </div>
+      </li>
+      <li>
+        <span class="priority-badge priority-1">Nu</span>
+        <div>
+          <h5>Hitta 2–3 holländska kunder med dokumenterade resultat</h5>
+          <p>Be om before/after-bilder: identisk belysning, neutral bakgrund, inga filter. Erbjud rabattkod. Det är er mest värdefulla creative-tillgång för Format 2 och 4.</p>
+        </div>
+      </li>
+      <li>
+        <span class="priority-badge priority-1">Nu</span>
+        <div>
+          <h5>Skriv 5 hookvarianter på holländska — testa dem mot varandra</h5>
+          <p>En variant per hook-typ ovan. A/B-testa under vecka 1. Hooken avgör allt — identifiera vad som fångar er specifika publik innan ni skalar budget.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ── SEKTION 7: ÅTGÄRDSPLAN ──────────────── -->
+  <section class="section" id="atgarder">
+    <p class="section-num">Del 7</p>
+    <h2>Konkret åtgärdsplan</h2>
+    <p class="section-intro">Vad som ska göras, i vilken ordning — och varför det är prioriterat.</p>
+
+    <h4>Den här veckan — inga undantag</h4>
+    <ul class="priority-list">
+      <li>
+        <span class="priority-badge priority-1">P1</span>
+        <div>
+          <h5>Påbörja översättning av sajt till holländska</h5>
+          <p>Produktsidor, varumärkeshistoria, förklaring av kylförvaring, FAQ. Utan detta är varje annonsering suboptimal. Förväntad ROAS-förbättring: 2–3x.</p>
+        </div>
+      </li>
+      <li>
+        <span class="priority-badge priority-1">P1</span>
+        <div>
+          <h5>Pausa engelska annonser — starta holländska</h5>
+          <p>Skriv 3–5 holländska annonstexter. Retinal Concentrate och Probiotic Concentrate som hero-produkter. Fokus på utbildning, inte försäljning.</p>
+        </div>
+      </li>
+      <li>
+        <span class="priority-badge priority-1">P1</span>
+        <div>
+          <h5>Identifiera 10 holländska micro-influencers — skicka produkter</h5>
+          <p>Välj profiler inom skincare (Anne @deskincarejunkie), wellness (Guusje van Geel), TikTok (laurenloois, shrads). Inga krav — bara autentisk respons.</p>
+        </div>
+      </li>
+    </ul>
+
+    <h4>Nästa 30 dagar</h4>
+    <ul class="priority-list">
+      <li>
+        <span class="priority-badge priority-2">P2</span>
+        <div>
+          <h5>Spela in 3 korta Johanna Gillbro-videos</h5>
+          <p>Format: 20–30 sek. Ämnen: (1) Varför konserveringsmedel är problemet, (2) Retinal vs Retinol, (3) Vad är mikrobiomet och varför spelar det roll? Kan subtextas till holländska.</p>
+        </div>
+      </li>
+      <li>
+        <span class="priority-badge priority-2">P2</span>
+        <div>
+          <h5>Strukturera om Meta till full-funnel</h5>
+          <p>Awareness-kampanj (videovisningar) + Consideration (trafik) + Conversion (köp). Separata kampanjer med separata budgets och creatives.</p>
+        </div>
+      </li>
+      <li>
+        <span class="priority-badge priority-2">P2</span>
+        <div>
+          <h5>Skicka press-kit till Libelle, Mirror Mirror, Vogue NL</h5>
+          <p>Produktsampling + pressrelease med vetenskaplig vinkel. Maartje van Engelen (beauty journalist, Libelle/Margriet) är en specifik kontakt att prioritera.</p>
+        </div>
+      </li>
+      <li>
+        <span class="priority-badge priority-2">P2</span>
+        <div>
+          <h5>Aktivera Google Ads sökordskampanj</h5>
+          <p>Holländska sökord: "retinal huidverzorging", "probiotische skincare", "huidverzorging zonder conserveringsmiddelen", "verse huidverzorging". Hög intent, låg konkurrens.</p>
+        </div>
+      </li>
+    </ul>
+
+    <h4>30–90 dagar</h4>
+    <ul class="priority-list">
+      <li>
+        <span class="priority-badge priority-3">P3</span>
+        <div>
+          <h5>Starta TikTok-konto för NL</h5>
+          <p>2 videos/vecka. Ingredient education på holländska. Hashtags: #huidverzorging, #skincaretips, #retinal. Fyll tomrummet av vetenskapligt grundat skincare-content.</p>
+        </div>
+      </li>
+      <li>
+        <span class="priority-badge priority-3">P3</span>
+        <div>
+          <h5>Registrera på Bol.com</h5>
+          <p>Kräver KvK-nummer (NL/BE). Optimera produktfeed: holländska titlar, USP-texter, höga quality-bilder. Sätt upp Retail Media för sponsored search.</p>
+        </div>
+      </li>
+      <li>
+        <span class="priority-badge priority-3">P3</span>
+        <div>
+          <h5>Skapa "Intro to Fresh Skincare"-startkit</h5>
+          <p>Bundle: Probiotic Concentrate + Rich Emulsion till inträdesvänligare pris. Sänker köptröskel, ökar AOV på sikt via retargeting.</p>
+        </div>
+      </li>
+      <li>
+        <span class="priority-badge priority-3">P3</span>
+        <div>
+          <h5>Aktivera Advantage+ Shopping Campaigns på Meta</h5>
+          <p>Kräver 50+ konverteringar/vecka i pixeln. När vi är där: kör ASC parallellt med manuella kampanjer. Förväntat ROAS-lyft: +22%.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+</div><!-- end .container -->
+
+<!-- ── FOOTER ─────────────────────────────── -->
+<footer>
+  <strong>Skinome × Nederland</strong> &nbsp;·&nbsp; Marknadsstrategi 2025–2026 &nbsp;·&nbsp; Konfidentiellt internt dokument<br><br>
+  Sammanställd av Country Manager-funktion, mars 2026 &nbsp;·&nbsp; Baserad på marknadsdata, konkurrentanalys och Meta Ads best practice
+</footer>
+
+</body>
+</html>
