@@ -38,15 +38,19 @@ Kvinnor 30–60 år, hälsomedvetna, tränar/yoga, kostmedvetna, resultatdrivna.
 
 ---
 
-## Nuläge i Holland
+## Nuläge i Holland (uppdaterat mars 2026)
 
 - **Start:** Juni 2025
-- **ROAS:** ~0,3 (kritiskt — förlorar pengar aktivt)
-- **Budget:** ~100 000 SEK/mån (~€8 500) — Meta + Google + PR-byrå + lite influencer
-- **Sajt/annonser:** Körs på engelska — stor konverteringsblockerare
+- **Orders YTD:** 70 orders · 52 nya kunder · 74% ny-kund-andel
+- **Total försäljning YTD:** 97 000 SEK ex. moms (Meta + Google)
+- **Meta:** 81 000 SEK spend → 56 000 SEK intäkt = ROAS 0,69x (upp från 0,3)
+- **CAC:** 1 510 SEK per ny kund · AOV: 1 386 SEK (~€118)
+- **Influencer YTD:** ~300 000 SEK spenderat — för stora profiler, bara 4 veckors boost → låg varaktig effekt
+- **PR-byrå:** 28 000 SEK/mån — begränsade resultat hittills
+- **Pågående:** Seeding av Sun Emulsion SPF 50+ till ~40 influencers inför säsongen
+- **Sajt/annonser:** Fortfarande delvis på engelska — konverteringsblockerare
 - **Distribution:** Enbart DTC via skinome.com
-- **Influencers:** Har holländska influencers som pratar holländska
-- **Domän:** Enbart skinome.com (saknar skinome.nl — kritisk svaghet)
+- **Domän:** Enbart skinome.com (saknar skinome.nl — kritisk svaghet kvar)
 
 ---
 
@@ -60,6 +64,14 @@ Full-funnel Meta-strategi med Advantage+ Shopping Campaigns, creative-format, RO
 
 ### Fas 3: Språkkorrigeringar
 19 språkfixar genomförda (Holland → Nederlanderna, stavfel etc.).
+
+### Fas 5: YTD-data och H1-rekommendationer — mars 2026
+Verkliga performancedata inlagda. Ny **Del 8: Performanceanalys & Rekommendationer H1 2026** tillagd i HTML-dokumentet. Innehåll:
+- Full spend-tabell YTD (Meta 81K, influencer 300K, PR ~84K → totalt ~465K vs 97K intäkt)
+- Analys av tre strukturella misstag i influencer-strategin (för stora profiler, bara boostad reel, för kort aktivering)
+- Konkret fördelning av 300K SEK influencer-budget H1 (nano/micro/mid-tier/Johanna-content/reserve)
+- PR-byrå KPI-ram med 60-dagars utvärderingsfrist
+- Meta-rekommendationer: optimera mot Add to Cart, återanvänd UGC från seeding
 
 ### Fas 4: Fördjupad research — mars 2026
 5 parallella research-agents genomförde djupdykning. Allt kompilerat i **Sektion 9 (Deep Research)** i HTML-dokumentet. Innehåll:
@@ -122,20 +134,22 @@ TikTok-viralt → DTC/Bol.com → Douglas/ICI PARIS XL → Etos DermaCare → Kr
 
 ## Nuvarande HTML-dokument
 
-**Fil:** `skinome-holland-strategi.html` (2 375 rader)
+**Fil:** `skinome-holland-strategi.html` (~2 600 rader)
 **GitHub:** https://github.com/Snyggon/skinome-holland
 **GitHub Pages:** https://snyggon.github.io/skinome-holland/
+**OBS:** Ändringar görs i BÅDA `skinome-holland-strategi.html` och `index.html` — GitHub Pages serverar `index.html`.
 
 ### Sektioner i dokumentet
-1. Sammanfattning — nuläge och ROAS-problemet
+1. Sammanfattning — YTD-data, nuläge (uppdaterat mars 2026)
 2. Varumärke — Johanna, USP-hierarki, produktmatris
 3. Marknaden — €854M, konsumentbeteende, trender
 4. Konkurrenter — CeraVe → Paula's Choice med priser
-5. Kanaler — prioriteringsordning P1–P4
+5. Kanaler — prioriteringsordning P1–P4 + H1-budgetfördelning
 6. Go-to-Market — 4-fasplan
-7. Meta-kampanj — full-funnel, creative-format, ROAS-mål
+7. Meta-kampanj — full-funnel, creative-format, ROAS-mål (uppdaterat till 0,69x)
 8. Åtgärdsplan — prioriterad lista P1/P2/P3
-9. **Deep Research (NY)** — komplett marknadsanalys baserad på 5 research-agents
+9. **Del 8 (NY mars 2026)** — Performanceanalys & H1-rekommendationer med verklig data
+10. **Deep Research** — komplett marknadsanalys baserad på 5 research-agents
 
 ---
 
@@ -214,14 +228,21 @@ TikTok-viralt → DTC/Bol.com → Douglas/ICI PARIS XL → Etos DermaCare → Kr
 
 ## Möjliga nästa steg att diskutera
 
-- [ ] Konkreta holländska annonstexter att A/B-testa
-- [ ] Influencer outreach-mall på holländska (för direktkontakt utan byrå)
+**Pågående — behöver uppföljning:**
+- [ ] Solskydds-seeding (~40 influencers) — vilka har postat? Erbjud partnerskap till top-5
+- [ ] PR-byrå KPI-möte — sätt 60-dagarskrav (se Del 8 för specifika KPIer)
+
+**Mest värdefulla nästa produkt att ta fram:**
+- [ ] Konkreta holländska annonstexter att A/B-testa (snabbaste ROAS-förbättringen)
+- [ ] Influencer outreach-mall på holländska — för micro-partnerskap H1
+- [ ] Manus/struktur för Johanna Gillbro-videos (6–8 clips, 20–30 sek)
 - [ ] Pressrelease-utkast till Mirror Mirror / Libelle på holländska
-- [ ] Kampanjkoncept i stil med CeraVe:s #LaatJeZien — Skinomes version
+- [ ] Kampanjkoncept — Skinomes version av CeraVe:s #LaatJeZien
+
+**Längre sikt:**
 - [ ] E-post/CRM welcome-flow för NL-kunder
 - [ ] TikTok content-kalender (2 videos/vecka, Johanna + UGC)
 - [ ] Bol.com registreringsprocess och produktfeed
-- [ ] Budgetoptimering — hur fördela €8 500/mån optimalt nu
 - [ ] Pitch-deck för Douglas / ICI PARIS XL möte
 - [ ] Specifik produktprioritering för NL — vilket paket att lyfta först?
 
@@ -242,3 +263,7 @@ Push:   git push origin main (använd wincred: git config credential.helper winc
 3. Språkkorrigeringar (19 fixes)
 4. Sektion 9 Deep Research (marknadsdata, konkurrenter, positionering, influencers, domänstrategi)
 5. Sektion 9.9 — utländska varumärken som lyckades i NL (CeraVe, La Roche-Posay, e.l.f., Rhode, Madara)
+6. YTD-data + Del 8 Performanceanalys i skinome-holland-strategi.html
+7. Synkade index.html (GitHub Pages-filen) med samma uppdateringar
+
+**VIKTIGT:** Alltid uppdatera BÅDA `skinome-holland-strategi.html` OCH `index.html` vid framtida ändringar.
